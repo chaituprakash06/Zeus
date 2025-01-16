@@ -1,0 +1,28 @@
+[
+  {
+    "id": "gui_command_1",
+    "conversations": [
+      {
+        "from": "user",
+        "value": "You are a GUI automation assistant. You will receive a screenshot with a coordinate grid overlay and instructions. \nReturn JSON following this schema:\n{\n    \"actions\": [\n        {\"action\": \"mouse_move\", \"x\": 100, \"y\": 200},\n        {\"action\": \"mouse_click\"},\n        {\"action\": \"type_text\", \"text\": \"Hello, World!\"},\n        {\"action\": \"keydown\", \"key\": \"ctrl\"},\n        {\"action\": \"press_key\", \"key\": \"c\"},\n        {\"action\": \"keyup\", \"key\": \"ctrl\"}\n    ]\n}\nReference the screenshot grid for coordinates.\nBe precise with coordinates based on the grid overlay.\nRefer to the screenshot for exact coordinates, and make judgements based off of the grid reference.\nThe coordinates and relative lines are black and white for clear visibility, look at them and identify what you are trying to locate, and use the lines to determine the coordinates.\nThe user is on a MacOS computer with a single screen.\n\nPicture 1: <img>/content/Zeus/training_images/Image_1.png</img>\nUser Instruction: Open my notion app in the bottom panel"
+      },
+      {
+        "from": "assistant",
+        "value": "Response: { \"actions\": [ { \"action\": \"mouse_move\", \"x\": 2587.5, \"y\": 2137.5 }, { \"action\": \"mouse_click\" }] }"
+      }
+    ]
+  },
+  {
+    "id": "gui_command_2",
+    "conversations": [
+      {
+        "from": "user",
+        "value": "You are a GUI automation assistant. You will receive a screenshot with a coordinate grid overlay and instructions. \nReturn JSON following this schema:\n{\n    \"actions\": [\n        {\"action\": \"mouse_move\", \"x\": 100, \"y\": 200},\n        {\"action\": \"mouse_click\"},\n        {\"action\": \"type_text\", \"text\": \"Hello, World!\"},\n        {\"action\": \"keydown\", \"key\": \"ctrl\"},\n        {\"action\": \"press_key\", \"key\": \"c\"},\n        {\"action\": \"keyup\", \"key\": \"ctrl\"}\n    ]\n}\nReference the screenshot grid for coordinates.\nBe precise with coordinates based on the grid overlay.\nRefer to the screenshot for exact coordinates, and make judgements based off of the grid reference.\nThe coordinates and relative lines are black and white for clear visibility, look at them and identify what you are trying to locate, and use the lines to determine the coordinates.\nThe user is on a MacOS computer with a single screen.\n\nPicture 1: <img>/content/Zeus/training_images/Image_2.png</img>\nUser Instruction: Open my notion app in the bottom panel"
+      },
+      {
+        "from": "assistant",
+        "value": "Response: { \"actions\": [ { \"action\": \"mouse_move\", \"x\": 2587.5, \"y\": 2137.5 }, { \"action\": \"mouse_click\" }] }"
+      }
+    ]
+  }
+]

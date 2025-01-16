@@ -24,9 +24,9 @@ response, history = model.chat(
                 Return JSON following this schema:
                 {{
                     "actions": [
-                        {{"action": "mouse_move", "x": (insert), "y": (insert)}},
+                        {{"action": "mouse_move", "x": 100, "y": 200}},
                         {{"action": "mouse_click"}},
-                        {{"action": "type_text", "text": "(insert)"}},
+                        {{"action": "type_text", "text": "Hello, World!"}},
                         {{"action": "keydown", "key": "ctrl"}},  // For holding down a key
                         {{"action": "press_key", "key": "c"}},   // For single key press
                         {{"action": "keyup", "key": "ctrl"}}     // For releasing a held key
