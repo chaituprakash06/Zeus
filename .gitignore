@@ -169,3 +169,32 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+
+
+# additional files to be ignored for Zeus project:
+
+# Training outputs and model artifacts
+output_qlora/
+output_qlora_longer/
+training_logs/
+runs/
+wandb/
+
+# Training images
+training_images/
+
+# IDE specific
+.vscode/
+.idea/
+
+# OS specific
+.DS_Store
+
+# Pip installation artifacts
+=*
+
+# Additional project-specific
+*.safetensors
+checkpoint-*/
